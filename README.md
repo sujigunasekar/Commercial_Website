@@ -1,5 +1,5 @@
 # Ex02 Commercial Website
-## Date:11-03-25
+## Date:11/03/25
 
 ## AIM
 To create a commercial website using CSS Flexbox.
@@ -51,134 +51,210 @@ Deploy the website.
 Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
-## index.html
+## HOME
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>HOME PAGE</title>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Sports Hub</h1>
-        </header>
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#">Teams</a>
-            <a href="#">Matches</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="main-content">
-            <section class="content">
-                <h2>Latest Sports News</h2>
-                <p>Stay updated with the latest sports events and scores.</p>
-            </section>
-            <aside class="sidebar">
-                <h2>Upcoming Matches</h2>
-                <ul>
-                    <li>Team A vs Team B - 5 PM</li>
-                    <li>Team C vs Team D - 7 PM</li>
-                    <li>Team E vs Team F - 9 PM</li>
-                </ul>
-            </aside>
-        </div>
-        <footer class="footer">
-            <p>&copy; 2025 Sports Hub. All rights reserved.</p>
-        </footer>
-    </div>
+<style type="text/css">
+	.form {
+		margin: 0 auto;
+		width: 210px;
+	}
+
+	.form label{
+		display: inline-block;
+		text-align: right;
+		float: left;
+	}
+
+	.form input{
+		display: inline-block;
+		text-align: left;
+		float: right;
+	}
+</style>
+<body style="background-image: url(vhome1.jpeg);background-size: 1500px;">
+    <marquee behavior="" direction="right" style="color: burlywood;">WELCOME TO OUR SITE</marquee>
+    <h1 style="text-align: center;color: aqua; padding: 50px;margin: auto; font-style:italic;">FRESHY SHOP</h1>
+    <h2 style="text-align: center;color: aquamarine;">LOGIN / SIGN UP</h2>
+    <br>
+    <br>
+    <form>
+    <div class="form">
+		<label style="color: aqua;">E-MAIL</label>
+        <br>
+		<input type="text" placeholder="Enter email">
+        <br>
+        <br>
+		<label style="color: aqua;">PASSWORD</label>
+		<input type="password" required>
+        <br>
+        <br>
+		<nav>
+			<a href="http://127.0.0.1:5500/prod.html" style="text-decoration: none; color:aqua;display: block;margin: 55px;"t target="_blank">LOGIN</a>
+		</nav>
+	</div>
+    </form>
 </body>
 </html>
 ```
-## style.css
+## PRODUCT
 ```
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+    <style>
+        .container{
+            margin: 20px;
+            padding: 20px;
+            border: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 10px solid black;}
+        .box{
+            margin: 10px;
+            padding: 20px;
+            font-size: larger;
+            font-style: italic;
+            border: 3px solid black;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">PRODUCTS</h1>
+    <header style="color: bisque;">
+            <nav  style=" text-align:end;">
+                <a href="http://127.0.0.1:5500/Fru.html" style="text-decoration: none; color: black; text-align: center; padding: 20px;">FRUITS </a>
+                <a href="http://127.0.0.1:5500/cookies.html" style="text-decoration: none; color: black; text-align: center; padding: 08px;">COOKIES</a>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="box"><img src="1insta.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="2insta.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="v3.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="v4.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="v5.jpeg" alt="" height="200px" width="200px" ></div>
+    </div>
+    <H3 style="text-align: center;color: green;font-style: italic;">FOR ORDERS CALL : 6587965412 ** E-mail:instamart@gmail.com</H3>
+</body>
+</html>
+```
+## FRUIT
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruits</title>
+    <style>
+        .container{
+            margin: 20px;
+            padding: 20px;
+            border: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 10px solid black;}
+        .box{
+            margin: 10px;
+            padding: 20px;
+            font-size: larger;
+            font-style: italic;
+            border: 3px solid black;
+        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">PRODUCTS</h1>
+    <header style="color: bisque;">
+            <nav  style=" text-align:end;">
+                <a href="http://127.0.0.1:5500/prod.html" style="text-decoration: none; color: black; text-align: center; padding: 20px;">VEGETABLE </a>
+                <a href="http://127.0.0.1:5500/Fru.html" style="text-decoration: none; color: black; text-align: center; padding: 20px;">FRUITS </a>
+                <a href="http://127.0.0.1:5500/cookies.html" style="text-decoration: none; color: black; text-align: center; padding: 08px;">COOKIES</a>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="box"><img src="4insta.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="6insta.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="f3.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="f4.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="f5.jpeg" alt="" height="200px" width="200px" ></div>
+    </div>
+    <H3 style="text-align: center;color: green;font-style: italic;">FOR ORDERS CALL : 6587965412 ** E-mail:instamart@gmail.com</H3>
+</body>
+</html>
+```
+## COOKIES
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+    <style>
+        .container{
+            margin: 5px;
+            padding: 20px;
+            border: 8px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 10px solid black;}
+        .box{
+            margin: 10px;
+            padding: 20px;
+            font-size: larger;
+            font-style: italic;
+            border: 3px solid black;
+        }
 
-header {
-    background: #0275d8;
-    color: blue;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-around;
-    background: #034694;
-    padding: 1rem;
-}
-
-.nav a {
-    color: violet;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-    color: #ffcc00;
-}
-
-.main-content {
-    display: flex;
-    flex: 1;
-    padding: 2rem;
-    gap: 1rem;
-}
-
-.sidebar {
-    flex: 1;
-    background: #f4f4f4;
-    padding: 1rem;
-    border-left: 4px solid #0275d8;
-}
-
-.content {
-    flex: 2;
-    background: #ddd;
-    padding: 1.5rem;
-    border-radius: 5px;
-}
-
-.footer {
-    background: #034694;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
-}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">PRODUCTS</h1>
+    <header style="color: bisque;">
+            <nav  style=" text-align:end;">
+                <a href="http://127.0.0.1:5500/prod.html" style="text-decoration: none; color: black; text-align: center; padding: 20px;">VEGETABLE </a>
+                <a href="http://127.0.0.1:5500/Fru.html" style="text-decoration: none; color: black; text-align: center; padding: 20px;">FRUITS </a>
+                <a href="http://127.0.0.1:5500/cookies.html" style="text-decoration: none; color: black; text-align: center; padding: 08px;">COOKIES</a>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="box"><img src="c1.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="c2.jpeg" alt="" height="200px" width="200px" ></div>
+        <div class="box"><img src="c3.jpeg" alt="" height="200px" width="200px" ></div>
+    </div>
+    <footer>
+        <H3 style="text-align: center;color: green;font-style: italic;">FOR ORDERS CALL : 6587965412 ** E-mail:instamart@gmail.com</H3>
+    </footer>
+    
+</body>
+</html>
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/116a5f5d-6df5-492d-aace-74fcfda5e277)
+![IMG-20250324-WA0022](https://github.com/user-attachments/assets/e09a4f03-12ce-41c8-8581-1afb02d7ce82)
+![IMG-20250324-WA0019](https://github.com/user-attachments/assets/4c11c818-311d-4ae6-bfde-1ba893e61dd5)
+![IMG-20250324-WA0017](https://github.com/user-attachments/assets/6a696516-f50e-4f23-8708-7c046a36677e)
+![IMG-20250324-WA0016](https://github.com/user-attachments/assets/ca7fa4a5-3c00-4c62-aebd-0852513300dc)
+
+
 
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.
